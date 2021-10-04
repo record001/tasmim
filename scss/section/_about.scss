@@ -1,0 +1,64 @@
+@import "../variables";
+
+// mt114
+.about {
+  margin-top: 114px;
+  position: relative;
+
+  &__meeting {
+    margin-top: 114px;
+    margin-left: 422px;
+  }
+  &__big_combined {
+    position: relative;
+  }
+
+  &__eye {
+    position: absolute;
+    right: 0;
+    top: 27px;
+  }
+  &__combined {
+    position: absolute;
+    bottom: 60px;
+    right: 40px;
+    
+    &:hover  .Arrow_right{
+      right: -60px;
+      transition: 300ms;
+      cursor: pointer;
+    }
+
+    .Arrow_right {
+      position: relative;
+      right: -38px;
+      top: -12px;
+    }
+  }
+
+  &__title {
+    width: 1009px;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 173.52%;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    position: absolute;
+    top: 353px;
+    left: 0;
+
+    span {
+      color: #ff0000;
+    }
+  }
+
+  &__by {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 100.52%;
+    color: rgba(255, 255, 255, 0.3);
+    width: 167px;
+    margin-left: auto;
+  }
+}

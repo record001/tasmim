@@ -1,0 +1,81 @@
+@import "../variables";
+
+.title {
+  &__body {
+    position: relative;
+    margin-top: 123px;
+  }
+  &__center {
+    margin-left: 77px;
+    display: flex;
+
+    .text {
+      width: 167px;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 100.52%;
+      text-align: right;
+      color: rgba(0, 0, 0, 0.6);
+      margin-top: 18px;
+    }
+
+    .social {
+      height: 125px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-left: auto;
+      margin-top: 20px;
+
+      .icon {
+        fill: red;
+        &:hover {
+          fill: rgb(0, 89, 255);
+          transition: 300ms;
+        }
+      }
+    }
+  }
+
+  .agentstvo {
+    margin-left: 516px;
+  }
+
+  &__content {
+    margin-left: 1025px;
+    margin-top: 20px;
+    width: 545px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &__footer {
+    margin-top: 189px;
+    margin-bottom: 50px;
+    @include flex_between_center;
+    position: relative;
+
+    .our_projects {
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 100.52%;
+      color: rgba(0, 0, 0, 0.6);
+    }
+
+    .red_circle {
+      position: absolute;
+      z-index: -1;
+      left: 114px;
+    }
+
+    .mouse {
+      position: absolute;
+      left: 860px;
+      bottom: -120px;
+    }
+
+    
+  }
+}

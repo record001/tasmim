@@ -1,0 +1,110 @@
+@import "../variables";
+
+.main {
+  padding-top: 179px;
+  background-color: #161616;
+}
+.service {
+  &__link {
+    @include flex_align_center;
+    .link_text {
+      font-weight: bold;
+      font-size: 26px;
+      color: #ff6b6b;
+      margin-left: 23px;
+      text-transform: uppercase;
+      &:hover {
+      color: #ec2c2ce1;
+      transition: 300ms;
+      }
+    }
+  }
+
+  &__list {
+    margin: 42px 0 165px;
+    @include flex_between_center;
+
+    
+  }
+  &__item {
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 100.52%;
+    text-transform: uppercase;
+    &:hover {
+      color: #ffffff;
+      transition: 500ms;
+      &::after {
+        background-color: #ff0000;
+      }
+    }
+
+    color: #5c5c5c;
+    &::after {
+      content: "";
+      display: block;
+      margin-top: 16px;
+      height: 2px;
+      background-color: #5c0f0f;
+      
+    }
+  }
+
+  &__wrapper {
+    @include flex_between_center;
+    flex-wrap: wrap;
+  }
+  &__card {
+    position: relative;
+    padding: 39px 148px 89px 62px;
+    width: 770px;
+    height: 350px;
+    margin-bottom: 72px;
+    background: #161616;
+    border: 1px solid rgba(165, 165, 165, 0.2);
+
+    .card_title {
+      font-weight: bold;
+      font-size: 26px;
+      line-height: 100.52%;
+
+      color: #ffffff;
+      &::before {
+        content: "";
+        display: inline-block;
+        background-color: white;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin-bottom: 5px;
+        margin-right: 10px;
+      }
+    }
+
+    p {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 151.02%;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .price {
+      @include flex_between_center;
+      position: absolute;
+      bottom: 50px;
+      h4  {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 100.52%;
+        color: #ffffff;
+      }
+      a{
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 100.52%;
+        color: #ffffff;
+        margin-left: 350px;
+      }
+    }
+  }
+}

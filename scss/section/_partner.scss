@@ -1,0 +1,14 @@
+@import "../variables";
+
+.partner {
+  background-color: #ffffff;
+
+  &__body {
+    padding: 22px 0 35px;
+  }
+
+  &__wrapper {
+    margin-top: 56px;
+    @include flex_between_center
+  }
+}

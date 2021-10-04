@@ -1,0 +1,40 @@
+@import "./variables";
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  font-family: "TT Norms";
+
+  .massage {
+      position: fixed;
+      top: 915px;
+      right: 80px;
+      animation-name: buttonAnimation;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+
+
+    }
+
+}
+.container {
+  width: 1710px;
+  margin: 0 auto;
+  padding: 0 5px;
+}
+
+li {
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+h1, h2, h3, h4, h5,h6 {
+  margin: 0;
+  
+}
