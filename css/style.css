@@ -316,6 +316,13 @@ h1, h2, h3, h4, h5, h6 {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  display: none;
+}
+
+.service__wrapper.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .service__card {

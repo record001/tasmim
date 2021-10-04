@@ -4,6 +4,7 @@
   padding-top: 179px;
   background-color: #161616;
 }
+
 .service {
   &__link {
     @include flex_align_center;
@@ -14,8 +15,8 @@
       margin-left: 23px;
       text-transform: uppercase;
       &:hover {
-      color: #ec2c2ce1;
-      transition: 300ms;
+        color: #ec2c2ce1;
+        transition: 300ms;
       }
     }
   }
@@ -23,8 +24,6 @@
   &__list {
     margin: 42px 0 165px;
     @include flex_between_center;
-
-    
   }
   &__item {
     font-weight: bold;
@@ -46,13 +45,19 @@
       margin-top: 16px;
       height: 2px;
       background-color: #5c0f0f;
-      
     }
   }
 
   &__wrapper {
     @include flex_between_center;
     flex-wrap: wrap;
+    display: none;
+
+    &.show {
+      display: flex;
+    }
+    
+    
   }
   &__card {
     position: relative;
@@ -92,13 +97,13 @@
       @include flex_between_center;
       position: absolute;
       bottom: 50px;
-      h4  {
+      h4 {
         font-weight: bold;
         font-size: 20px;
         line-height: 100.52%;
         color: #ffffff;
       }
-      a{
+      a {
         font-weight: bold;
         font-size: 20px;
         line-height: 100.52%;
