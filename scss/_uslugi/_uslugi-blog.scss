@@ -1,0 +1,202 @@
+@import "../variables";
+
+.blog {
+  background-color: #161616;
+
+ 
+
+  &__wrapper {
+    margin-top: 53px;
+    @include flex_between_center;
+  }
+
+  .info {
+    &__name {
+      font-weight: 500;
+      font-size: 26px;
+      line-height: 156.02%;
+      color: #ffffff;
+    }
+    &__body {
+      width: 729px;
+      margin-top: 13px;
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 130.52%;
+      color: #ffffff;
+    }
+    &__link {
+      margin-left: 419px;
+      margin-top: 38px;
+      display: block;
+      font-weight: 500;
+      font-size: 26px;
+      line-height: 156.02%;
+
+      color: #ffffff;
+      &:hover{
+        transition: 300ms;
+        color: rgba(207, 207, 238, 0.534);
+      }
+    }
+  }
+
+  &__number {
+    width: 350px;
+    margin: 119px auto;
+    @include flex_between_center;
+
+    a {
+      
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 156.02%;
+      color: #ffffff;
+      &:nth-child(1)::after{
+        content: "";
+        display: block;
+        background-color: white;
+        height: 5px;
+        width: 24px;
+        border-radius: 5px;
+        
+
+      }
+      &:hover{
+        transition: 300ms;
+        color: rgba(207, 207, 238, 0.534);
+      }
+    }
+    .next {
+      margin-right: 0;
+      padding: 13px 38px;
+      background-color: white;
+      color: black;
+      border-radius: 5px;
+
+      &:hover {
+        color: white;
+        background-color: black;
+        
+      }
+    }
+  }
+}
+
+
+
+
+
+
+// massage feild:
+
+.form {
+  margin: 70px auto 0px;
+  padding: 53px 83px 82px 44px;
+  width: 1140px;
+  height: 646px;
+  border: 2px solid rgba(107, 107, 107, 0.5);
+  border-radius: 3px;
+
+  &__title {
+    margin-bottom: 91px;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 109.52%;
+
+    color: #ffffff;
+    text-align: center;
+
+    span {
+      color: red;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  &__input {
+    width: 376px;
+    height: 38px;
+    margin-bottom: 53px;
+    padding-left: 10px;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.3);
+
+    &::placeholder {
+      font-weight: bold;
+      font-size: 20px;
+      // line-height: 156.02%;
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+  &__line1 {
+    position: absolute;
+    top: 40px;
+  }
+  &__line2 {
+    position: absolute;
+    top: 130px;
+  }
+  &__line3 {
+    position: absolute;
+    top: 220px;
+  }
+
+  &__massage {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 156.02%;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &__right {
+    position: relative;
+    margin-left: 165px;
+    .textarea {
+      width: 376px;
+      height: 190px;
+      background-color: transparent;
+      border: none;
+      color: rgba(255, 255, 255, 0.3);
+      font-size: 25px;
+      padding-left: 10px;
+    }
+  }
+  &__line4 {
+    position: absolute;
+    top: 220px;
+    left: 0;
+  }
+
+  .submit {
+   display: block;
+    width: 150px;
+    height: 45px;
+    margin-top: 78px;
+    margin-left: 760px;
+    
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 18px;
+    
+    
+    color: #000000;
+
+    &:hover {
+      transition: 400ms;
+      color: white;
+      background-color: black;
+      border: 1px solid white;
+      cursor: pointer;
+    }
+  }
+}
