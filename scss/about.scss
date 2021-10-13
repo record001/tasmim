@@ -1,0 +1,97 @@
+@import "./variables";
+@import "./global";
+@import "./header";
+@import "./_about/top";
+@import "./_about/data";
+@import "./_about/team";
+@import "./_about/partners";
+@import "./footer";
+
+.modal {
+  position: fixed;
+  // top: 80px;
+  // left: 100px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 3;
+  // width: 1800px;
+  // height: 850px;
+  background-color: #161616;
+  display: none;
+  // display: block;
+
+  padding: 50px 102px 342px 241px;
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+
+    .left img {
+      width: 490px;
+      height: 790px;
+    }
+
+    .right {
+      text-align: left;
+      &__title {
+        font-weight: bold;
+        font-size: 50px;
+        line-height: 156.02%;
+
+        text-transform: uppercase;
+
+        color: rgba(255, 255, 255, 0.5);
+      }
+
+      &__subtitle {
+        font-weight: normal;
+        font-size: 40px;
+        line-height: 156.02%;
+
+        color: #ffffff;
+      }
+
+      &__text {
+        width: 653px;
+        font-weight: normal;
+        font-size: 40px;
+        // line-height: 140%;
+        color: #ffffff;
+        margin-top: 34px;
+      }
+
+      &__contact {
+        margin-top: 132px;
+        font-weight: normal;
+        font-size: 26px;
+        line-height: 140%;
+
+        color: rgba(255, 255, 255, 0.5);
+      }
+    }
+  }
+
+  .close_btn {
+    width: 50px;
+    height: 50px;
+    display: block;
+    font-size: 30px;
+    // border: 1px solid white;
+    border: none;
+    color: red;
+    margin-left: auto;
+    border-radius: 5px;
+    background-color: transparent;
+
+    &:hover {
+      transition: 300ms;
+      cursor: pointer;
+      color: rgb(245, 119, 119);
+    }
+  }
+}
+.on {
+  display: block;
+}

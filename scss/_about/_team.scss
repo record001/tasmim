@@ -1,18 +1,26 @@
 @import "../variables";
 
+
+
+.main {
+    background-color: #161616;;
+}
+
 .team {
-  margin-top: 180px;
-  padding-bottom: 163px;
+  // margin-top: 180px;
+  // padding-bottom: 163px;
 
   &__wrapper {
     margin-top: 45px;
     @include flex_between_center;
+    flex-wrap: wrap;
   }
 
-  &__card {
+  &__card1 {
     width: 392px;
     position: relative;
     overflow: hidden;
+    margin: 155px 0 122px;
 
     
     &:hover .hover {
@@ -64,7 +72,11 @@
 
       transform: translateY(-1200px);
 
-      
+      &:hover {
+        color:rgba(232, 248, 7, 0.863);
+        border: 2px solid red;
+
+      }
 
       }
     }

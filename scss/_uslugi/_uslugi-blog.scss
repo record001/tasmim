@@ -3,84 +3,6 @@
 .blog {
   background-color: #161616;
 
- 
-
-  &__wrapper {
-    margin-top: 53px;
-    @include flex_between_center;
-  }
-
-  .info {
-    &__name {
-      font-weight: 500;
-      font-size: 26px;
-      line-height: 156.02%;
-      color: #ffffff;
-    }
-    &__body {
-      width: 729px;
-      margin-top: 13px;
-      font-weight: bold;
-      font-size: 40px;
-      line-height: 130.52%;
-      color: #ffffff;
-    }
-    &__link {
-      margin-left: 419px;
-      margin-top: 38px;
-      display: block;
-      font-weight: 500;
-      font-size: 26px;
-      line-height: 156.02%;
-
-      color: #ffffff;
-      &:hover{
-        transition: 300ms;
-        color: rgba(207, 207, 238, 0.534);
-      }
-    }
-  }
-
-  &__number {
-    width: 350px;
-    margin: 119px auto;
-    @include flex_between_center;
-
-    a {
-      
-      font-weight: bold;
-      font-size: 30px;
-      line-height: 156.02%;
-      color: #ffffff;
-      &:nth-child(1)::after{
-        content: "";
-        display: block;
-        background-color: white;
-        height: 5px;
-        width: 24px;
-        border-radius: 5px;
-        
-
-      }
-      &:hover{
-        transition: 300ms;
-        color: rgba(207, 207, 238, 0.534);
-      }
-    }
-    .next {
-      margin-right: 0;
-      padding: 13px 38px;
-      background-color: white;
-      color: black;
-      border-radius: 5px;
-
-      &:hover {
-        color: white;
-        background-color: black;
-        
-      }
-    }
-  }
 }
 
 
@@ -94,12 +16,11 @@
   margin: 70px auto 0px;
   padding: 53px 83px 82px 44px;
   width: 1140px;
-  height: 646px;
-  border: 2px solid rgba(107, 107, 107, 0.5);
-  border-radius: 3px;
+  // height: 646px;
+  
 
   &__title {
-    margin-bottom: 91px;
+    margin-bottom: 20px;
     font-weight: bold;
     font-size: 40px;
     line-height: 109.52%;
@@ -107,13 +28,25 @@
     color: #ffffff;
     text-align: center;
 
-    span {
-      color: red;
-    }
+    
+  }
+
+  &__text {
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 140%;
+       
+    text-align: center;
+    
+    color: #FFFFFF;
+    margin-bottom: 102px;
   }
 
   &__wrapper {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   &__left {
@@ -122,7 +55,8 @@
     position: relative;
   }
   &__input {
-    width: 376px;
+    width: 630px;
+
     height: 38px;
     margin-bottom: 53px;
     padding-left: 10px;
@@ -141,14 +75,19 @@
   &__line1 {
     position: absolute;
     top: 40px;
+    width: 645px;
+
   }
   &__line2 {
     position: absolute;
     top: 130px;
+    width: 645px;
   }
   &__line3 {
     position: absolute;
     top: 220px;
+    width: 645px;
+
   }
 
   &__massage {
@@ -160,9 +99,10 @@
 
   &__right {
     position: relative;
-    margin-left: 165px;
+    // margin-left: 165px;
     .textarea {
-      width: 376px;
+      width: 630px;
+
       height: 190px;
       background-color: transparent;
       border: none;
@@ -175,14 +115,16 @@
     position: absolute;
     top: 220px;
     left: 0;
+    width: 630px;
+
   }
 
   .submit {
    display: block;
     width: 150px;
     height: 45px;
+    margin: auto;
     margin-top: 78px;
-    margin-left: 760px;
     
     border-radius: 5px;
     font-weight: 500;

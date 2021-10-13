@@ -1,0 +1,108 @@
+.main {
+  &__number {
+    width: 350px;
+    margin: 119px auto;
+    @include flex_between_center;
+
+    a {
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 156.02%;
+      color: #000000;
+      &:nth-child(1)::after {
+        content: "";
+        display: block;
+        background-color: #000000ce;
+        height: 5px;
+        width: 18px;
+        border-radius: 5px;
+
+        &:hover {
+          transition: 300ms;
+          color: #00000070;
+        }
+      }
+      &:hover {
+        transition: 300ms;
+        color: #00000070;
+      }
+    }
+    .next {
+      margin-right: 0;
+      padding: 13px 38px;
+      background-color: white;
+      color: black;
+      border-radius: 5px;
+
+      &:hover {
+        color: white;
+        background-color: black;
+      }
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 140%;
+    text-align: center;
+
+    color: #000000;
+
+    margin: 25px 0 57px;
+  }
+
+  &__card {
+    display: flex;
+    // justify-content: space-between;
+
+    padding: 42px 82px 56px 51px;
+    margin-bottom: 50px;
+    border: 2px solid rgba(193, 193, 193, 0.3);
+  }
+
+  &__img {
+    display: block;
+    width: 654px;
+    height: 337px;
+  }
+
+  &__content {
+    margin-left: 77px;
+  }
+
+  &__date {
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 156.02%;
+
+    color: rgba(0, 0, 0, 0.5);
+  }
+  &__theme {
+    width: 737px;
+    margin: 17px 0 13px;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 135%;
+
+    color: #000000;
+  }
+
+  &__text {
+    width: 856px;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 135%;
+    color: #000000;
+  }
+
+  &__link {
+    display: block;
+   text-align: end; 
+    margin-top: 22px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 156.02%;
+       color: rgba(237, 17, 29, 0.6);
+  }
+}
