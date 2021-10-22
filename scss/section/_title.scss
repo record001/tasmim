@@ -29,8 +29,10 @@
 
       .icon {
         fill: red;
+        opacity: 0.6;
         &:hover {
-          fill: rgb(0, 89, 255);
+          
+          opacity: 1;
           transition: 300ms;
         }
       }

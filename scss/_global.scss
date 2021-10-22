@@ -7,21 +7,25 @@
   box-sizing: border-box;
 }
 body {
+  overflow-x: hidden;
   position: relative;
   font-family: "TT Norms";
 
   .massage {
-      position: fixed;
-      top: 700px;
-      right: 80px;
-      bottom: -50px ;
-      animation-name: buttonAnimation;
-      animation-duration: 1s;
-      animation-iteration-count: infinite;
+    position: fixed;
+    top: 700px;
+    right: 80px;
+    bottom: -50px;
+    animation-name: buttonAnimation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    fill: rgba(0, 0, 0, 0.5);
 
-
+    &:hover {
+      transition: 500ms;
+      fill: rgba(0, 0, 0, 1);
     }
-
+  }
 }
 .container {
   width: 1710px;
@@ -32,10 +36,77 @@ body {
 li {
   list-style: none;
 }
-a{
+a {
   text-decoration: none;
 }
-h1, h2, h3, h4, h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
-  
+}
+
+// menu modal:
+
+.menu_modal {
+  // display: none;
+  transform: translateX(-2000px);
+  opacity: 0;
+  z-index: 10;
+  position: absolute;
+  top: 100px;
+  left: 200px;
+  width: 960px;
+  height: 816px;
+  padding: 50px 0 162px 98px;
+  // border: 2px solid red;
+  background-color: #fff;
+
+  &__btn {
+    width: 31px;
+    height: 31px;
+    border: 3px solid #eb0c0c;
+    background-color: #fff;
+    color: #eb0c0c;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 26px;
+
+    &:hover {
+      cursor: pointer;
+      border: 3px solid #e63b3b;
+    }
+    &:active {
+      transform: scale(1.1);
+    }
+  }
+
+  &__list {
+    display: block;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 100.52%;
+    color: #000000;
+    opacity: 0.6;
+    margin-bottom: 48px;
+
+    &:hover {
+      opacity: 1;
+      transition: 400ms;
+    }
+  }
+}
+
+.ochish {
+  // display: block;
+  transition: 500ms;
+  transform: translateX(0px);
+  opacity: 1;
+}
+.yopish_btn {
+  transition: 500ms;
+  transform: translateX(-2000px);
+  opacity: 0;
 }
