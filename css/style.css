@@ -68,6 +68,8 @@ h6 {
   height: 816px;
   padding: 50px 0 162px 98px;
   background-color: #fff;
+  -webkit-box-shadow: 5px 5px 10px #000000;
+          box-shadow: 5px 5px 10px #000000;
 }
 
 .menu_modal__btn {

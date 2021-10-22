@@ -35,12 +35,14 @@ let left__menu = document.querySelector(".left__menu") // open
 let menu_modal__btn = document.querySelector(".menu_modal__btn") // x
 
 left__menu.addEventListener("click", e =>{
+  menu_modal.classList.remove("yopish_btn")
 
     menu_modal.classList.add("ochish")
 
 })
 
 menu_modal__btn.addEventListener("click", e => {
+  menu_modal.classList.remove("ochish")
 
   menu_modal.classList.add("yopish_btn")
 
